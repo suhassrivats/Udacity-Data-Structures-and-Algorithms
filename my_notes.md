@@ -1,7 +1,6 @@
-Space complexity expalanation:
+# My Notes
 
-**Space Complexity:**
-[Detailed Explanation](https://www.youtube.com/watch?v=yOb0BL-84h8)
+**Space Complexity:** [Detailed Explanation](https://www.youtube.com/watch?v=yOb0BL-84h8)
 
 The space complexity of an algorithm or a computer program is the amount of memory space required to solve an instance of the computational problem as a function of the size of the input.
 
@@ -18,13 +17,23 @@ Space complexity includes both Auxiliary space and space used by input.
 
 `Space Complexity = Input Size + Auxiliary space`
 
+---
+
+Space complexity: 
+
+- https://www.youtube.com/watch?v=yOb0BL-84h8
+
 How to approach leetcode problems:
-https://www.youtube.com/watch?v=GbyXxUDVeAo
+
+- https://www.youtube.com/watch?v=GbyXxUDVeAo
 
 Huffman coding:
-https://www.youtube.com/watch?v=iiGZ947Tcck
-https://medium.com/iecse-hashtag/huffman-coding-compression-basics-in-python-6653cdb4c476
+
+- https://www.youtube.com/watch?v=iiGZ947Tcck
+- https://medium.com/iecse-hashtag/huffman-coding-compression-basics-in-python-6653cdb4c476
 
 Python Lambda:
-https://pybit.es/dict-ordering.html
-https://dbader.org/blog/python-lambda-functions
+
+- https://pybit.es/dict-ordering.html
+- https://dbader.org/blog/python-lambda-functions
+
