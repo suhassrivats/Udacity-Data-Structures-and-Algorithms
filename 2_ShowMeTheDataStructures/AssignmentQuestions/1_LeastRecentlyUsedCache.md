@@ -24,8 +24,8 @@ For the current problem, you can consider the `size of cache = 5`.
 
 Here is some boiler plate code and some example test cases to get you started on this problem:
 
-[LRU Cache Problem Explanation](https://www.youtube.com/watch?v=S6IfqDXWa10)
-[LRU Cache Solution using Hashmap and Doubly Linked list](https://www.youtube.com/watch?v=7v_mUfpg46E&feature=youtu.be)
+- [LRU Cache Problem Explanation](https://www.youtube.com/watch?v=S6IfqDXWa10)
+- [LRU Cache Solution using Hashmap and Doubly Linked list](https://www.youtube.com/watch?v=7v_mUfpg46E&feature=youtu.be)
 
 ```python
 class LRU_Cache(object):
