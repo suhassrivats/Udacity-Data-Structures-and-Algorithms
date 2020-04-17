@@ -14,16 +14,16 @@ Let `n` be the length of LinkedList-1 and `m` be the lengh of LinkedList-2.
 
 *Time Complexity:*
 
-All methods in the LinkedList class such as `append`, `size`, `__str__ ` take linear time complexity i.e, `O(n)` and `O(m)` respectively.
+- All methods in the LinkedList class such as `append`, `size`, `__str__ ` take linear time complexity i.e, `O(n)` and `O(m)` respectively.
 
-In the worst case, elements of both LinkedLists could be unique for `union` function => `O(n + m)`
+- In the worst case, elements of both LinkedLists could be unique for `union` function => `O(n + m)`
 
-In the worst case, elements of both LinkedLists could be similar for `intersection` function => `O(n)` where n=m.
+- In the worst case, elements of both LinkedLists could be similar for `intersection` function => `O(n)` where n=m.
 
 
 
 *Space Complexity:*
 
-In the worst case, elements of both LinkedLists could be unique for union function => `O(n + m)`
+- In the worst case, elements of both LinkedLists could be unique for union function => `O(n + m)`
 
-In the worst case, elements of both LinkedLists could be similar for intersection function => `O(n)`
+- In the worst case, elements of both LinkedLists could be similar for intersection function => `O(n)`
