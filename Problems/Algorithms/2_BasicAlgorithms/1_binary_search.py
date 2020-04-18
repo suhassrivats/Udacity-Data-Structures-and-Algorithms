@@ -8,6 +8,8 @@ Binary Search Implementation
 5. If greater, move the lower bound to just above the current center
 6. If less, move the upper bound to just below the current center
 7. Repeat steps 1-6 until you find the target or until the bounds are the same or cross (the upper bound is less than the lower bound).
+
+Time Complexity: O(log(n))
 """
 
 
