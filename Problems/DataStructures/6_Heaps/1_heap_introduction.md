@@ -35,8 +35,9 @@ A very common way to solve the patient-doctor problem mentioned above would be t
     * A running nose may be assigned priority 1
     * Fever may be assigned 2
     * Accident may get a priority 10
+
   
-  
+
 You will find this theme recurring in all of programming. We use numbers to effectively represent data.     
 
 For the sake of simplicity, let's only consider integers here. Let us assume a scenario where we get integers as input and we assign a priority on how large / small they are. Let us say the smaller the number, the smaller its priority. So, in our simplified version of the problem statement the value of the integer serves as a priority. 
@@ -86,7 +87,7 @@ Binary Search Trees are laid out according to the value of the node that we want
 
 If we assume that our Binary Search tree is balanced, insertion would require `O(h)` time in the worst case. Similarly, removal would also require `O(h)` time. Here `h` is the height of the binary search tree. 
 
-<img src='./resources/01-bst.png'>
+![image-20200420144259902](C:\Users\subburat\AppData\Roaming\Typora\typora-user-images\image-20200420144259902.png)
 
 A Binary Tree is called a `Balanced Binary Tree` when the difference between the heights of it's left subtree and right subtree do not differ by more than one. Additionally, to be balanced, all the subtrees of the binary tree must also be balanced. 
 
@@ -96,7 +97,7 @@ For a balanced tree, we can safely approximate the height of the tree `h` to `lo
 
 However, in the worst case, our binary search tree might just be a sequential list of nodes (stretching to the right or to the left). Consider the following tree:
 
-<img src='./resources/02-bst.png'>
+![image-20200420144431414](C:\Users\subburat\AppData\Roaming\Typora\typora-user-images\image-20200420144431414.png)
 
 In such a scenario the binary search tree effectively turns into a linked list. In this case, the time complexity would be `O(n)`
 
@@ -115,27 +116,27 @@ A heap is a data structure with the following two main properties:
 
 1. **Complete Binary Tree** - Like the name suggests we use a binary tree to create heaps. A complete binary tree is a special type of binary tree in which all levels must be filled except for the last level. Moreover, in the last level, the elements must be filled from left to right.
 
-<img src='./resources/01-cbt.png'>
+![image-20200420144519478](C:\Users\subburat\AppData\Roaming\Typora\typora-user-images\image-20200420144519478.png)
 
 A. is a complete binary tree. Notice how every level except the last level is filled. Also notice how the last level is filled from left to right. 
 
 
-<img src='./resources/02-cbt.png'>
+![image-20200420144546885](C:\Users\subburat\AppData\Roaming\Typora\typora-user-images\image-20200420144546885.png)
 
 B. is not a complete binary tree. Although evey level is filled except for the last level. Notice how the last level is not filled from left to right. `25` does not have any right node and yet there is one more node (`9`) in the same level towards the right of it. It is mandatory for a complete binary tree to be filled from left to right.
 
+![image-20200420144617460](C:\Users\subburat\AppData\Roaming\Typora\typora-user-images\image-20200420144617460.png)
 
-<img src='./resources/03-cbt.png'>
 C. is also not a binary tree. Notice how the second level is not completely filled and yet we have elements in the third level. The right node of `10` is empty and yet we have nodes in the next level.
 
 * **Heap Order Property** - Heaps come in two flavors
     * Min Heap
     * Max Heap
     
-    
 * Min Heap - In the case of min heaps, for each node, the parent node must be smaller than both the child nodes. It's okay even if one or both of the child nodes do not exists. However if they do exist, the value of the parent node must be smaller. Also note that it does not matter if the left node is greater than the right node or vice versa. The only important condition is that the root node must be smaller than both it's child nodes
 * Max Heap - For max heaps, this condition is exactly reversed. For each node, the value of the parent node must be larger than both the child nodes. 
-    
+  
+
 Thus, for a data structure to be called a Heap, it must satisfy both of the above properties. 
 1. It must be a complete binary tree
 2. It must satisfy the heap order property. If it's a min heap, it must satisfy the heap order property for min heaps. If it's a max heap, it should satisfy the heap order property for max heaps. 
@@ -144,14 +145,10 @@ Thus, for a data structure to be called a Heap, it must satisfy both of the abov
 
 Let's go back to our complete binary tree `A`.
 
-<img src='./resources/01-cbt.png'>
-
 If we have to insert one more node, where should the next node go?
 Because `A.` is a complete binary tree, the next node can only go as the `left` node of `15`.
 
-
-
-<img src='./resources/04-cbt.png'>
+![image-20200420144705763](C:\Users\subburat\AppData\Roaming\Typora\typora-user-images\image-20200420144705763.png)
 
 
 Similarly, let's look back `A.` again. If we have to delete a node from `A.`, which node should we delete? Again, to ensure that our tree remains a complete binary tree even after deleting a node, we can only remove `9`.
@@ -246,7 +243,7 @@ Although we call them complete binary trees, and we will always visualize them a
 
 Let's us see how. 
 
-<img src='./resources/05-cbt.png'>
+
 
 An array is a contiguous blocks of memory with individual "blocks" are laid out one after the other in memory. We are used to visualizing arrays as sequential blocks of memory. 
 
