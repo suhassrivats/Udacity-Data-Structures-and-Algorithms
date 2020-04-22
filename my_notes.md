@@ -11,7 +11,7 @@ For any algorithm, memory is required for the following purposes:
 1. To store program instructions.
 2. To store constant values
 3. To store variable values
-4. And for few other things like function calls, jumping statements etc. 
+4. And for few other things like function calls, jumping statements etc.
 
 Auxiliary Space : is the temporary space (excluding the input size) allocated by your algorithm to solve the problem, with respect to input size.
 
@@ -21,7 +21,7 @@ Space complexity includes both Auxiliary space and space used by input.
 
 ---
 
-Space complexity: 
+Space complexity:
 
 - https://www.youtube.com/watch?v=yOb0BL-84h8
 
@@ -39,3 +39,6 @@ Python Lambda:
 - https://pybit.es/dict-ordering.html
 - https://dbader.org/blog/python-lambda-functions
 
+How to use Cracking The Coding Interview (CTCI) book:
+
+- https://www.quora.com/How-useful-is-Cracking-the-Coding-Interview-book-while-appearing-for-technical-interviews-of-companies-like-Google-Facebook-Amazon-etc
