@@ -74,12 +74,12 @@ huffcode = encoded_text(huffman_dict, data) # O(n) -- for loop inside this funct
 return huffcode, heap
 ```
 
-Total time complexity (encoding) => `O(n) + O(n) + O(n) + O(n)` => `O(4n)` => `O(n)`
+- Total time complexity (encoding) => `O(n) + O(n) + O(n) + O(n)` => `O(4n)` => `O(n)`
 
-Similarly, time complexity for decoding => `O(n)`
+- Similarly, total time complexity for decoding => `O(n)`
 
 
 
 *Space Complexity:*
 
-It takes `O(distinct_characters)` space for huffman encoding and decoding to store encoded/decoded data.
+- It takes `O(distinct_characters)` space for huffman encoding and decoding to store encoded/decoded data.
