@@ -16,9 +16,8 @@ def grandparent(node):
         return None
     return node.parent.parent
 
+
 # Helper for finding the node's parent's sibling
-
-
 def pibling(node):
     p = node.parent
     gp = grandparent(node)
