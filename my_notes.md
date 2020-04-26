@@ -42,3 +42,10 @@ Python Lambda:
 How to use Cracking The Coding Interview (CTCI) book:
 
 - https://www.quora.com/How-useful-is-Cracking-the-Coding-Interview-book-while-appearing-for-technical-interviews-of-companies-like-Google-Facebook-Amazon-etc
+
+Heap Sort:
+- Time complexity analysis: http://www.cs.toronto.edu/~krueger/cscB63h/lectures/tut02.txt
+- Introduction: https://www.programiz.com/dsa/heap-sort
+- Building MaxHeap time complexity is `O(n)`:
+  - https://www.youtube.com/watch?v=XZ_Beap6Vo0
+  - https://www.youtube.com/watch?v=HI97KDV23Ig
