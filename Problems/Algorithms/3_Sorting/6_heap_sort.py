@@ -30,7 +30,7 @@ root i OR O(log n) since h = log n = the height of the entire tree
 
 For n nodes, n * O(h) => O(n logn)
 
-3) Space Complexity: O(1)
+Space Complexity: O(1)
 """
 
 
