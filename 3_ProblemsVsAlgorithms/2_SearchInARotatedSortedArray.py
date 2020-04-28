@@ -15,16 +15,6 @@ Find a pivot element (using binary search) such that there are two sorted
 arrays. Check in which array does the target element reside. Then apply binary
 search on that array to find its position.
 
-Complexity:
-Time complexity:
-    Finding pivot => O(logn)
-    Binary Search => O(logn)
-    Total => O(logn)
-Space complexity:
-    Input space: O(n) //for input_list
-    Auxiliary space: O(1)
-    Total space: O(n + 1) => O(1)
-
 Reference:
 https://www.youtube.com/watch?v=5BI0Rdm9Yhk
 """
@@ -38,6 +28,16 @@ def rotated_array_search(input_list, target):
        input_list(array), target(int): Input array to search and the target
     Returns:
        int: Index or -1
+
+    Complexity:
+    Time complexity:
+        Finding pivot => O(logn)
+        Binary Search => O(logn)
+        Total => O(logn)
+    Space complexity:
+        Input space: O(n) //for input_list
+        Auxiliary space: O(1)
+        Total space: O(n + 1) => O(1)
     """
 
     # Check if input_list empty or if there is only one element
