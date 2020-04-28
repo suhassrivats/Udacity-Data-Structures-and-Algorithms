@@ -24,6 +24,7 @@ Space complexity includes both Auxiliary space and space used by input.
 Space complexity:
 
 - https://www.youtube.com/watch?v=yOb0BL-84h8
+- [Space complexity short definitions](https://www.geeksforgeeks.org/g-fact-86/)
 
 How to approach leetcode problems:
 
