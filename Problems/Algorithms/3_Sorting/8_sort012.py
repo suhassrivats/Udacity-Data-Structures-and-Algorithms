@@ -8,7 +8,10 @@ positions, this will automatically cause the 1s to be in the correct positions
 as well.
 
 Time complexity: O(n)
-Space compexity: O(n) // To store the input array. No additional space needed.
+Space complexity:
+    Input space => O(n)
+    Auxiliary space (extra or temporary space) => O(1)
+    Total space => O(n + 1) => O(n)
 """
 
 
