@@ -60,7 +60,7 @@ def sqrt(number):
     Time complexity: O(logn)
     Space complexity:
         Input space: O(1)
-        Auxiliary space: O(1)
+        Auxiliary space (extra or temp): O(1)
         Total space: O(1 + 1) => O(2) => O(1)
     """
 

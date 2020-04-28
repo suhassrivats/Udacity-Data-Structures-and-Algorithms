@@ -7,6 +7,9 @@ provides.
 Note: O(n) does not necessarily mean single-traversal. For e.g. if you
 traverse the array twice, that would still be an O(n) solution but it will not
 count as single traversal.
+
+Reference:
+https://www.youtube.com/watch?v=BOt1DAvR0zI
 """
 
 
@@ -17,6 +20,13 @@ def sort_012(input_list):
 
     Args:
        input_list(list): List to be sorted
+
+    Complexity:
+    Time complexity: O(n)
+    Space complexity:
+        Input space => O(n)
+        Auxiliary space => O(1)
+        Total space => O(n + 1) => O(n)
     """
 
     low = 0
@@ -47,6 +57,7 @@ def test_function(test_case):
         print("Fail")
 
 
+# Tests
 test_function([0, 0, 2, 2, 2, 1, 1, 1, 2, 0, 2])
 test_function([2, 1, 2, 0, 0, 2, 1, 0, 1, 0, 0, 2, 2,
                2, 1, 2, 0, 0, 0, 2, 1, 0, 2, 0, 0, 1])
