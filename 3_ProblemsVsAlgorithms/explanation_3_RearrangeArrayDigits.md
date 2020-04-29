@@ -27,7 +27,5 @@ We know that a maximum number can be formed from given digits (0-9) when the lar
 *Space complexity:*
 
 - Input space: `O(n)`
-
 - Auxiliary space (extra or temporary space): `O(n)` // for sorted_input
-
 - Total: Input space + Auxiliary space => `O(n + n)` => `O(n)`
