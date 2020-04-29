@@ -10,7 +10,7 @@ Given an input array consisting on only 0, 1, and 2, sort the array in a single 
 
 To keep the `1`s in its position as it is and move all `0`s and `2` to left and right respectively. This is an in-place algorithm which uses no extra space.
 
-Although I could use other approach which is to scan through the entire list and store the count of 0, 1, and, 2 in a dictionary. This would give the same time complexity as my above approach but we would have to use extra space for it for dictionary and sorted array. 
+Although I could use other approach which is to scan through the entire list and store the count of 0, 1, and, 2 in a dictionary. This would give the same time complexity as my above approach but we would have to use extra space for dictionary and sorted array. 
 
 So the trade-off here really is space. Therefore, I decided to use in-place algorithm in this case.
 
