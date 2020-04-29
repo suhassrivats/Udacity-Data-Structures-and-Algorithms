@@ -12,7 +12,15 @@ The expected answer would be [531, 42]. Another expected answer can be
 [542, 31]. In scenarios such as these when there are more than one possible
 answers, return any one.
 
-Here is some boilerplate code and test cases to start with:
+Approach:
+Given an array of integers between 0 to 9, find two numbers with maximum sum
+formed by using all digits of the array. We know that a maximum number can be
+formed from given digits (0-9) when the largest digit appears first, second
+largest digit appears second, and so on.. finally the smallest digit appears
+in the end.
+
+Reference:
+https://www.techiedelight.com/find-two-numbers-maximum-sum-array-digits/
 """
 
 
