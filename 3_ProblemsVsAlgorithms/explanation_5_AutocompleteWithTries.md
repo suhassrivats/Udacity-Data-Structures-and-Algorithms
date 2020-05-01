@@ -22,5 +22,5 @@ Implement a `Trie` datastructure with `insert` word, `find` prefix and, `match` 
 
 *Space complexity:*
 
-- Insert => `O(n)` where `n` is the total number of nodes in a Trie. Initially, we expect Trie space to grow linearly with the input number of words but gradually decrease as new words are likely to overlap with the existing nodes.
-- Find_words => `O(n)` where `n` is the number of nodes in a Trie. For instance, if all words in a dictionary are starting with `a` and search string is also `a` then it has visit every node which is a linear operation.
+- Insert => `O(n)` where `n` is the total number of nodes in a Trie. Initially, we expect Trie space to grow linearly with the input number of words but it will gradually decrease as new words are likely to overlap with the existing nodes.
+- Find_words => `O(n)` where `n` is the number of nodes in a Trie. For instance, if all words in a dictionary are starting with `a` and search string is also `a` then it has to visit every node which is a linear operation.
