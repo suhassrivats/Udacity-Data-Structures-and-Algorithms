@@ -26,8 +26,8 @@ In the Naïve approach, we are trying to find square root of a number by multipl
 
 Complexity:
 
-- *Time complexity:* `O(log(n))`
+- *Time complexity:* `O(log(n))` as the time-complexity is dominated by BinarySearch
 - *Space complexity:*
-  - Input space: `O(1)`
-  - Auxiliary space (extra or temp): `O(1)`
+  - Input space: `O(1)` as input is a constant (integer)
+  - Auxiliary space (extra or temp): `O(1)` 
   - Total space: `O(1 + 1)` => `O(2)` => `O(1)`

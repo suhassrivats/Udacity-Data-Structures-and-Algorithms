@@ -18,7 +18,7 @@ So the trade-off here really is space. Therefore, I decided to use in-place algo
 
 **Complexity:**
 
-- *Time complexity:* `O(n)`
+- *Time complexity:* `O(n)` // visiting every element in the array
 - *Space complexity:*
   - Input space => `O(n)`
   - Auxiliary space => `O(1)`

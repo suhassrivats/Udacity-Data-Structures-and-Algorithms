@@ -1,4 +1,3 @@
-
 # Trie
 You've learned about Trees and Binary Search Trees. In this notebook, you'll learn about a new type of Tree called Trie. Before we dive into the details, let's talk about the kind of problem Trie can help with.
 
@@ -45,13 +44,13 @@ def is_word(word):
     Look for the word in `basic_trie`
     """
     current_node = basic_trie
-    
+
     for char in word:
         if char not in current_node:
             return False
-        
+
         current_node = current_node[char]
-    
+
     return current_node['word_end']
 
 
@@ -85,13 +84,13 @@ class TrieNode(object):
 class Trie(object):
     def __init__(self):
         self.root = TrieNode()
-    
+
     def add(self, word):
         """
         Add `word` to trie
         """
         pass
-    
+
     def exists(self, word):
         """
         Check if word exists in trie

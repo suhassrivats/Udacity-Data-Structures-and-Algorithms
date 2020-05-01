@@ -37,7 +37,7 @@ def rotated_array_search(input_list, target):
     Space complexity:
         Input space: O(n) //for input_list
         Auxiliary space: O(1)
-        Total space: O(n + 1) => O(1)
+        Total space: O(n + 1) => O(n)
     """
 
     # Check if input_list empty or if there is only one element

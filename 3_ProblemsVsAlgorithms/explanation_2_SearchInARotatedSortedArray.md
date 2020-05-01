@@ -24,12 +24,12 @@ Find a pivot element (using binary search) such that there are two sorted arrays
 
 *Time complexity:*
 
-- Sorting: `O(nlog(n))`
-- 2-for loops: `O(logn + logn)` => `O(logn)`
-- Total: `O(nlogn + logn)` => `O(nlog(n))`
+- Finding pivot => `O(logn)` // uses BinarySearch
+- Binary search => `O(logn)`
+- Total: `O(logn + logn)` => `O(log(n))`
 
 *Space complexity:*
 
-- Input space: `O(n)`
-- Auxiliary space (extra or temporary space): `O(n)` // for sorted_input
+- Input space: `O(n)` // array input
+- Auxiliary space (extra or temporary space): `O(n)` // for sorted array
 - Total: Input space + Auxiliary space => `O(n + n)` => `O(n)`
