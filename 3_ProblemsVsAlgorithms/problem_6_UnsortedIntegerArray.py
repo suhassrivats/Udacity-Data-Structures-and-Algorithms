@@ -1,3 +1,4 @@
+import random
 """
 Max and Min in a Unsorted Array:
 In this problem, we will look for smallest and largest integer from a list of
@@ -12,14 +13,34 @@ def get_min_max(ints):
 
     Args:
        ints(list): list of integers containing one or more integers
+
+    **Complexity Analysis:**
+        *Time complexity*  => `O(n)` // iterate through each item in an array
+        *Space complexity:*
+        - Input space => `O(n)`
+        - Auxiliary space => `O(1)`
+        - Total space => `O(n + 1)`  => `O(n)`
     """
-   pass
+
+    minval = ints[0]
+    maxval = ints[0]
+
+    for i in range(len(ints)):
+        # If minval is greater than current element, then update minval
+        if minval > ints[i]:
+            minval = ints[i]
+
+        # If maxval is less than current element, then update maxval
+        if maxval < ints[i]:
+            maxval = ints[i]
+
+    return (minval, maxval)
 
 
 # Example Test Case of Ten Integers
-import random
-
 l = [i for i in range(0, 10)]  # a list containing 0 - 9
 random.shuffle(l)
 
-print ("Pass" if ((0, 9) == get_min_max(l)) else "Fail")
+print("Pass" if ((0, 9) == get_min_max(l)) else "Fail")
+print("Pass" if ((2, 2) == get_min_max([2])) else "Fail")
+print("Pass" if ((-1, 1) == get_min_max([1, -1])) else "Fail")
