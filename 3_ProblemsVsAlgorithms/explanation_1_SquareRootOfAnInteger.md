@@ -12,7 +12,7 @@ To find the square root of an integer in `O(log(n))` time complexity without usi
 
 To find the floor of the Square Root, try with all natural numbers starting from 1. Continue to increment the number by 1 until the product of the that number with itself is greater than input number.
 
-Complexity:
+Complexity Analysis:
 
 - *Time complexity* => `O(sqrt(n))`
 - *Space complexity:*
@@ -24,7 +24,7 @@ Complexity:
 
 In the Naïve approach, we are trying to find square root of a number by multiplying a natural number by itself (starting from 1, increment by 1). This was further optimized using Binary Search Algorithm.
 
-Complexity:
+Complexity Analysis:
 
 - *Time complexity:* `O(log(n))` as the time-complexity is dominated by BinarySearch
 - *Space complexity:*
