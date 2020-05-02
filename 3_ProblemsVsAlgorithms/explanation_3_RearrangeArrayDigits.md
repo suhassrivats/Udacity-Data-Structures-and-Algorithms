@@ -20,12 +20,12 @@ We know that a maximum number can be formed from given digits (0-9) when the lar
 
 *Time complexity:*
 
-- Sorting: `O(nlog(n))`
-- 2-for loops: `O(logn + logn)` => `O(logn)` // iterating with the step-size of 2 makes it logarithmic
-- Total: `O(nlogn + logn)` => `O(nlog(n))`
+- Sorting: `O(nlog(n))` // for using mergesort
+- 2-for loops: `O(n/2 + n/2)` => `O(n)` // iterating with the step-size of 2 makes it n/2
+- Total: `O(nlogn + n)` => `O(nlog(n))`
 
 *Space complexity:*
 
-- Input space: `O(n)`
-- Auxiliary space (extra or temporary space): `O(n)` // for sorted_input
-- Total: Input space + Auxiliary space => `O(n + n)` => `O(n)`
+- Input space: `O(n)` where `n` is the length of input list
+- Auxiliary space (extra or temporary space): `O(1)` // since we are reversing the sorted input in-place
+- Total: Input space + Auxiliary space => `O(n + 1)` => `O(n)`
