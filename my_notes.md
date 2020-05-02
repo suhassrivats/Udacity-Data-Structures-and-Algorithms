@@ -51,3 +51,6 @@ Heap Sort:
 - Building MaxHeap time complexity is `O(n)`:
   - https://www.youtube.com/watch?v=XZ_Beap6Vo0
   - https://www.youtube.com/watch?v=HI97KDV23Ig
+
+Tries:
+- [Trying to Understand Tries](https://medium.com/basecs/trying-to-understand-tries-3ec6bede0014)
