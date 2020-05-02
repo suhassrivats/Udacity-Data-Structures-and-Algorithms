@@ -36,6 +36,10 @@ def sqrt_naive(number):
         Total space => O(1 + 1) => O(2) => O(1)
     """
 
+    # Corner case to handle negative numbers
+    if number < 0:
+        return None
+
     # Base cases
     if (number == 0 or number == 1):
         return number
@@ -63,6 +67,10 @@ def sqrt(number):
         Auxiliary space (extra or temp): O(1)
         Total space: O(1 + 1) => O(2) => O(1)
     """
+
+    # Corner case to handle negative numbers
+    if number < 0:
+        return None
 
     if number == 0 or number == 1:
         return number
@@ -95,6 +103,6 @@ def sqrt(number):
 # Tests
 print("Pass" if (3 == sqrt(9)) else "Fail")
 print("Pass" if (0 == sqrt(0)) else "Fail")
-print("Pass" if (4 == sqrt(16)) else "Fail")
-print("Pass" if (1 == sqrt(1)) else "Fail")
+print("Pass" if (None == sqrt(-25)) else "Fail")
+print("Pass" if (None == sqrt(-1)) else "Fail")
 print("Pass" if (5 == sqrt(27)) else "Fail")
