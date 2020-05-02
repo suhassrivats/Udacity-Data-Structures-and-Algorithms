@@ -22,17 +22,20 @@ def get_min_max(ints):
         - Total space => `O(n + 1)`  => `O(n)`
     """
 
+    if len(ints) == 0:
+        return (None, None)
+
     minval = ints[0]
     maxval = ints[0]
 
-    for i in range(len(ints)):
+    for num in ints:
         # If minval is greater than current element, then update minval
-        if minval > ints[i]:
-            minval = ints[i]
+        if minval > num:
+            minval = num
 
         # If maxval is less than current element, then update maxval
-        if maxval < ints[i]:
-            maxval = ints[i]
+        if maxval < num:
+            maxval = num
 
     return (minval, maxval)
 
@@ -44,3 +47,4 @@ random.shuffle(l)
 print("Pass" if ((0, 9) == get_min_max(l)) else "Fail")
 print("Pass" if ((2, 2) == get_min_max([2])) else "Fail")
 print("Pass" if ((-1, 1) == get_min_max([1, -1])) else "Fail")
+print("Pass" if ((None, None) == get_min_max([])) else "Fail")

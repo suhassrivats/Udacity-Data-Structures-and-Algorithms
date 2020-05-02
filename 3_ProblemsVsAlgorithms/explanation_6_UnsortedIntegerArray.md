@@ -8,7 +8,7 @@ Look for smallest and largest integer from a list of unsorted integers. The code
 
 **Approach:**
 
-Initially assume that `min` and `max` values are the first element of the array. Iteratively check if the current element is greater/lesser than min/max values. Update min and max values accordingly. Return min, max values in a tuple format.
+Initially assume that `min` and `max` values are the first element of the array. Use linear search algorithm to check if the current element is greater/lesser than min/max values. Update them accordingly and return (min, max) values in a tuple format.
 
 
 
