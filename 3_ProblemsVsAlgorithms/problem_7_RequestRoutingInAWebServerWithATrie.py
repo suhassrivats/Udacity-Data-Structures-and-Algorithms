@@ -49,7 +49,6 @@ class Router:
         self.handler = handler
         self.not_found = not_found if not_found != "" or not_found is not None else "HTTP 404 Page Not Found"
 
-
     def add_handler(self, path, handler):
         # Add a handler for a path
         # You will need to split the path and pass the pass parts
@@ -57,7 +56,6 @@ class Router:
         node = self.root
         path_list = self.split_path(path)
         node.insert(path_list, handler)
-
 
     def lookup(self, path):
         # lookup path (by parts) and return the associated handler
@@ -99,27 +97,32 @@ implementation
 """
 
 # create the router and add a route
-# remove the 'not found handler' if you did not implement this
-
 router = Router("root handler", "not found handler")
 router.add_handler("/home/about", "about handler")  # add a route
 router.add_handler("/home/contact", "contact us")  # add a route
 
 # should print 'root handler'
+# root handler ('root handler'): You Got Root!
 print("\nroot handler ('root handler'):", router.lookup("/"))
 
 # should print 'not found handler' or None if you did not implement one
+# /home ('not found handler' or None): HTTP 404 Page Not Found
 print("/home ('not found handler' or None):", router.lookup("/home"))
 
 # should print 'about handler'
+# /home/about ('about handler'): about handler
 print("/home/about ('about handler'):", router.lookup("/home/about"))
 
 # should print 'about handler' or None if you did not handle trailing slashes
+# /home/about/ ('about handler' or None): about handler
 print("/home/about/ ('about handler' or None):", router.lookup("/home/about/"))
 
 # should print 'not found handler' or None if you did not implement one
-print("/home/about/me ('not found handler' or None):", router.lookup("/home/about/me"))
+# /home/about/me ('not found handler' or None): HTTP 404 Page Not Found
+print("/home/about/me ('not found handler' or None):",
+      router.lookup("/home/about/me"))
 
+# /home/contact ('contact us'): contact us
 print("/home/contact ('contact us'):", router.lookup("/home/contact/"))
 
 
@@ -128,9 +131,15 @@ rout1 = Router("handle this", "")
 rout1.add_handler("/something", "something handler")
 rout1.add_handler("/something/somewhere", "somewhere handler")
 
+# /home (not found): HTTP 404 Page Not Found
 print("\n/home (not found):", rout1.lookup("/home"))
+
+# /something ('something handler'): something handler
 print("/something ('something handler'):", rout1.lookup("/something/"))
-print("/something/somewhere ('somewhere handler'):", rout1.lookup("/something/somewhere"))
+
+# /something/somewhere ('somewhere handler'): somewhere handler
+print("/something/somewhere ('somewhere handler'):",
+      rout1.lookup("/something/somewhere"))
 print()
 
 
