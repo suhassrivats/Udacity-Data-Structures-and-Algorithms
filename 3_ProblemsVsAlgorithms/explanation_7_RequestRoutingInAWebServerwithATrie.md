@@ -16,10 +16,13 @@ It is described in [HTTPRouter](https://github.com/suhassrivats/Udacity-Data-Str
 
 *Time complexity:*
 
-- Insert: `O(n)` where n is length of input path. Every character of the path must be evaluated in order to split the path into segments. In worst case, number of segments can grow linearly with length of path, and every segment has to be added to a dictionary. Adding to a dictionary has O(1) time.
-- Find: `O(m)`where m is length of the list of path segments.
+The worst-case runtime for creating a trie is a combination of `m`, the length of the longest key in the trie, and `n`, the total number of keys in the trie. Thus, the worst case runtime of creating a trie is `O(mn)`.
+
+The time complexity of searching, inserting, and deleting from a trie depends on the length of the word a that’s being searched for, inserted, or deleted, and the number of total words, `n`, making the runtime of these operations `O(an)`. Of course, for the longest word in the trie, inserting, searching, and deleting will take more time and memory than for the shortest word in the trie.
+
+Reference:
+https://medium.com/basecs/trying-to-understand-tries-3ec6bede0014
 
 *Space complexity:*
 
-- Insert: `O(n)` where n length of input path. We store all path segment strings in the trie nodes (not using any kind of hashing) so the space requirement grows even if there is only one path segment. We could possibly reduce this to O(m) where m is number of path segments if we stored hashes of the segments instead of segments themselves.
-- Find: `O(n)` where n is length of input.
+Splitting a string to store individual parts of the path is dependent on the length of the string and the depth or level of the path, which could be quite large on a site with many pages. In any case, using a dictionary should be `O(n)` where n is the count or number of components in the path.
