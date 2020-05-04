@@ -30,6 +30,7 @@ Space complexity:
 How to approach leetcode problems:
 
 - https://www.youtube.com/watch?v=GbyXxUDVeAo
+- [Optimal Leetcode learning strategy? Struggle or exposure?](https://www.reddit.com/r/cscareerquestions/comments/6rsxbm/optimal_leetcode_learning_strategy_struggle_or/dl971lp/)
 
 Huffman coding:
 
