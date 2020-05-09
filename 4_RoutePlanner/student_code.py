@@ -76,3 +76,5 @@ def helper_path(start, goal):
         _path_list.insert([item[0] + [front], g, h])
 
     return helper_path(current, goal)
+
+# Reference: https://github.com/viralj/nd256_project4/blob/master/student_code.py
