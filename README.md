@@ -73,8 +73,6 @@ path between two points on a map. You will first select and implement appropriat
 points on a map and then implement the A* algorithm to find shortest path.
 ```
 
-https://github.com/suhassrivats/Udacity-Data-Structures-and-Algorithms/blob/master/Data%20Structures%20and%20Algorithms%20Nanodegree.jpg
-
 ## Certification
 
 Verification URL: https://confirm.udacity.com/AFHR2F46
