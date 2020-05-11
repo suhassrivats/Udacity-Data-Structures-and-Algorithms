@@ -78,6 +78,3 @@ https://github.com/suhassrivats/Udacity-Data-Structures-and-Algorithms/blob/mast
 ## Certification
 
 Verification URL: https://confirm.udacity.com/AFHR2F46
-
-![Data Structures and Algorithms Nanodegree Certificate](Data Structures and Algorithms Nanodegree.jpg)
-
