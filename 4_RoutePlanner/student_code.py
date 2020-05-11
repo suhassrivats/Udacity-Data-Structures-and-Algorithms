@@ -1,80 +1,48 @@
 import math
-
-global _intersections, _roads, _path_list, interested_values, _next
-interested_values, _intersections = {}, {}
-_roads, _path_list, _next = [], [], []
+from queue import PriorityQueue
 
 
-class PriorityQueue(object):
+def shortest_path(graph, start, goal):
+    path_queue = PriorityQueue()
+    path_queue.put(start, 0)
 
-    def __init__(self):
-        self.queue = []
+    previous = {start: None}
+    score = {start: 0}
 
-    def __str__(self):
-        return ' '.join([str(i) for i in self.queue])
+    while not path_queue.empty():
+        current = path_queue.get()
+        if current == goal:
+            generate_path(previous, start, goal)
 
-    def is_empty(self):
-        return not self.queue
+        for node in graph.roads[current]:
+            update_score = score[current] + heuristic_measure(
+                graph.intersections[current],
+                graph.intersections[node]
+            )
 
-    def insert(self, data):
-        self.queue.append(data)
+            if node not in score or update_score < score[node]:
+                score[node] = update_score
+                totalScore = update_score + heuristic_measure(
+                    graph.intersections[current], graph.intersections[node])
+                path_queue.put(node, totalScore)
+                previous[node] = current
 
-    def delete(self):
-        try:
-            _min = 0
-            for i in range(len(self.queue)):
-                if (self.queue[i][-1] + self.queue[i][-2]) < (self.queue[_min][-1] + self.queue[_min][-2]):
-                    _min = i
-            item = self.queue[_min]
-            del self.queue[_min]
-            return item
-        except IndexError:
-            pass
-
-
-def shortest_path(M, start, goal):
-    if start == goal:
-        return [start]
-
-    global _intersections, _roads, _path_list, interested_values, _next
-    interested_values = {}
-    _intersections = M.intersections
-    _roads = M.roads
-    for node in _intersections:
-        interested_values[node] = math.sqrt((_intersections[node][0] - _intersections[goal][0]) ** 2 + abs(
-            _intersections[node][1] - _intersections[goal][1]) ** 2)
-
-    _next = []
-    for i in range(len(_roads)):
-        temp = []
-        for path in _roads[i]:
-            temp.append(math.sqrt((_intersections[i][0] - _intersections[path][0]) ** 2 + abs(
-                _intersections[i][1] - _intersections[path][1]) ** 2))
-        _next.append(temp)
-
-    _path_list = PriorityQueue()
-    _path_list.insert([[start], 0, interested_values[start]])
-    return helper_path(start, goal)
+    return generate_path(previous, start, goal)
 
 
-def helper_path(start, goal):
-    global _intersections, _roads, _path_list, interested_values, _next
-    item = 0
-    if _path_list.is_empty():
-        return "No possible path"
-    else:
-        item = _path_list.delete()
-    current = item[0][-1]
-    if current == goal:
-        return item[0]
+def heuristic_measure(start, goal):
+    return math.sqrt(((start[0] - goal[0]) ** 2) + ((start[1] - goal[1]) ** 2))
 
-    for i, front in enumerate(_roads[current]):
-        if front in item[0]:
-            continue
-        g = _next[current][i] + item[-2]
-        h = interested_values[front]
-        _path_list.insert([item[0] + [front], g, h])
 
-    return helper_path(current, goal)
+def generate_path(previous, start, goal):
+    current = goal
+    path = [current]
+    while current != start:
+        current = previous[current]
+        path.append(current)
+    path.reverse()
+    return path
 
-# Reference: https://github.com/viralj/nd256_project4/blob/master/student_code.py
+# Reference:
+# https://github.com/viralj/nd256_project4/blob/master/student_code.py
+# https://www.geeksforgeeks.org/a-search-algorithm/
